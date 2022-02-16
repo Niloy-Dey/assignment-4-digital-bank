@@ -14,5 +14,16 @@ function calculateIncomeExpenses(){
     }
     
 
+function savingMoney(){
+        var inputPercentage = parseFloat(document.getElementById('save').value);
+        var expensesAfterBalance = parseFloat(document.getElementById('after-expenses-balance').innerText);
+        var saving =    (expensesAfterBalance * inputPercentage) / 100;
 
+        var savingAmount = document.getElementById('saving-amount');
+        savingAmount.innerText = saving;
+
+        var remaining = expensesAfterBalance - saving;
+        var remainingAmount = document.getElementById('remaining-balance');
+        remainingAmount.innerText = remaining;     
+}
 
