@@ -1,3 +1,4 @@
+// calulate button calculation start here 
 function calculateIncomeExpenses(){
         const inputIncome =  parseFloat(document.getElementById('income').value);
         const inputFood =  parseFloat(document.getElementById('food').value);
@@ -24,6 +25,7 @@ function calculateIncomeExpenses(){
     }
     
 
+    // saving button calculation start here 
 function savingMoney(){
         var inputPercentage = document.getElementById('save');
         const inputPercentageAmount =parseFloat(inputPercentage.value);
